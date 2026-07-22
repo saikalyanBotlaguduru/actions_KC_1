@@ -1,0 +1,20 @@
+name: MY Second Workflow
+
+on: push
+
+jobs:
+  second_job:
+    runs-on: ubuntu-latest
+    steps:
+    - name: checkout repo 
+      uses: actions/checkout@v7.0.1
+
+    - name: List and Read files
+      run: |
+        echo "My second github action"
+        ls -ltra
+        cat README.md
+    - name: Generate ASCII Artwork
+      uses: gr2m/cowsay-action@v1.0.2
+      with:
+        text: "Hello"
