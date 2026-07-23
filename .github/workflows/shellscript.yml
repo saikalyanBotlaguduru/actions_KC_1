@@ -1,6 +1,6 @@
 name: ShellScript
 
-runs-on: push
+on: push
 
 jobs:
     shellscript:
