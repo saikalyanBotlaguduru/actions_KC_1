@@ -6,12 +6,12 @@ jobs:
     shellscript:
         runs-on: ubuntu-latest
         steps:
-            - name: checkout repo
-              run:  actions/checkout@v7.0.1
+        - name: checkout repo
+          run:  actions/checkout@v7.0.1
 
-            - name: list repo files
-              run:  ls -ltra
+        - name: list repo files
+          run:  ls -ltra
 
-            - name: executing shell script
-              run:  ./ascii-script.sh
+        - name: executing shell script
+          run:  ./ascii-script.sh
             
